@@ -186,6 +186,7 @@
   box-sizing: border-box;
   position: fixed;
   z-index: 1;
+  vertical-align: middle;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
