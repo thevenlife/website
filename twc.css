@@ -177,7 +177,7 @@
 }
 
 .indexcontainer{
-  height: 140px;
+  height: 100px;
   width: 100%;
   background-position: center;
   background-size: cover;
@@ -186,21 +186,20 @@
   box-sizing: border-box;
   position: fixed;
   z-index: 1;
-  vertical-align: middle;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 .logo{
   width: 200px;
-  margin-left: 8%;
-  margin-top: 40px;
+  margin-left: 4%;
+  margin-top: 30px;
   cursor: pointer;
 }
 
 .navbar{
   width: 50%;
   height: auto;
-  margin-top: 40px;
+  margin-top: 15px;
   float: right;
   display: inline-block;
   align-items: center;
