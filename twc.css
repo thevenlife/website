@@ -410,6 +410,13 @@ nav ul li a:hover{
   line-height: 1.5;
 }
 
+.optionsnormal20 h {
+  font-size: 30px;
+  font-family: "josefin";
+  color: #7E1D17;
+  line-height: 1.5;
+}
+
 .optionsnormalimage{
   width: 100%;
   display: inline-block;
