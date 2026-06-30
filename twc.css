@@ -310,6 +310,22 @@ nav ul li a:hover{
   color: rgba(126,29,23,1);
 }
 
+.blog {
+  max-width: 1200px;
+  width:70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  display: inline-block;
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  border-style: solid;
+  padding: 0;
+  border-width: 5px;
+  border-color: #7E1D17;
+}
+
 .optionsnormal {
   max-width: 1200px;
   width: 50%;
@@ -666,6 +682,17 @@ nav ul li a:hover{
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
+  font-size: 22px;
+  font-weight: lighter;
+  text-align: center;
+  font-family: "josefin";
+  color: #000;
+  line-height: 1.2;
+}
+
+.musicimagelayout{
+  width: 100%;
+  text-align: center;
   font-size: 22px;
   font-weight: lighter;
   text-align: center;
