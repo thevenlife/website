@@ -196,6 +196,12 @@
   cursor: pointer;
 }
 
+.logofooter{
+  width: 200px;
+  margin: auto;
+  cursor: pointer;
+}
+
 .navbar{
   width: 50%;
   height: auto;
@@ -306,30 +312,68 @@ nav ul li a:hover{
 
 .optionsnormal {
   max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
+  width: 50%;
+  display: inline-block;
   grid-gap: 1rem;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
   vertical-align: middle;
 }
 
-.optionsnormaltext h{
+.optionsnormal h{
   font-size: 50px;
-  font-weight: normal;
   text-align: center;
+  font-weight: normal;
   font-family: "diario";
   color: #7E1D17;
   line-height: 1.5;
 
 }
 
-.optionsnormaltext p {
+.optionsnormal p {
   font-size: 22px;
   text-align: center;
   font-family: "josefin";
   color: #000;
   line-height: 1.5;
-  margin: 0;
+  padding: 1em;
+}
+
+.optionsnormal15 {
+  max-width: 1200px;
+  width: 18%;
+  display: inline-block;
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.optionsnormal15 p {
+  font-size: 22px;
+  text-align: center;
+  font-family: "josefin";
+  color: #000;
+  line-height: 1.5;
+  padding: 1em;
+}
+
+.optionsnormal10 {
+  max-width: 1200px;
+  width: 10%;
+  display: inline-block;
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  vertical-align: bottom;
+}
+
+.optionsnormal10 p {
+  font-size: 22px;
+  text-align: right;
+  font-family: "josefin";
+  color: #000;
+  line-height: 1.5;
   padding: 1em;
 }
 
@@ -337,8 +381,37 @@ nav ul li a:hover{
   width: 100%;
   display: inline-block;
   object-fit: cover;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
+}
+
+.optionsred {
+  max-width: 1200px;
+  width: 50%;
+  display: inline-block;
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  background-color: #7E1D17;
+}
+
+.optionsred h{
+  font-size: 50px;
+  text-align: center;
+  font-weight: normal;
+  font-family: "diario";
+  color: #fff;
+  line-height: 1.5;
+
+}
+
+.optionsred p {
+  font-size: 22px;
+  text-align: center;
+  font-family: "josefin";
+  color: #fff;
+  line-height: 1.5;
+  padding: 1em;
 }
 
 .musicnormalimage{
@@ -384,8 +457,8 @@ nav ul li a:hover{
 }
 
 .optionimage{
-  width: 90%;
-  display: inline-block;
+  width: 100%;
+  display: block;
   object-fit: cover;
   max-width: 500px;
 }
@@ -393,9 +466,9 @@ nav ul li a:hover{
 .musicimage{
   display: inline-block;
   object-fit: cover;
-  max-width: 500px;
+  max-width: 650px;
   border-style: solid;
-  border: 20px;
+  border-width: 20px;
   border-color: white;
 }
 
@@ -498,9 +571,9 @@ nav ul li a:hover{
 }
 
 .selectionbtn{
-  position: absolute;
+  position: relative;
   bottom: 0;
-  margin-left: -65px;
+  margin: auto;
   display: inline-block;
   background: rgba(0,0,0,1);
   padding: 15px;
@@ -542,15 +615,39 @@ nav ul li a:hover{
 .heading{
   width: 100%;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-size: 30px;
+  padding: 2%;
+  font-size: 50px;
   font-weight: normal;
   text-align: center;
   font-family: "diario";
   color: #7E1D17;
   line-height: 1.5;
   background-color: #fff;
+}
+
+.headingwhite{
+  width: 100%;
+  text-align: center;
+  padding: 2%;
+  font-size: 50px;
+  font-weight: normal;
+  text-align: center;
+  font-family: "diario";
+  color: #fff;
+  line-height: 1.5;
+  background-color: #7E1D17;
+}
+
+.tourtable{
+  width: 100%;
+  text-align: center;
+  padding-top: 2%;
+  font-size: 30px;
+  text-align: center;
+  font-family: "josefin";
+  color: #000;
+  background-color: #7E1D17;
+  border-collapse: collapse;
 }
 
 .instafeed{
@@ -574,6 +671,18 @@ nav ul li a:hover{
   text-align: center;
   font-family: "josefin";
   color: #000;
+  line-height: 1.2;
+}
+
+.button{
+  width: 100%;
+  text-align: center;
+  padding-bottom: 2%;
+  font-size: 22px;
+  font-weight: lighter;
+  text-align: center;
+  font-family: "josefin";
+  background-color: #7E1D17;
   line-height: 1.2;
 }
 
@@ -875,7 +984,7 @@ pre {
     vertical-align: middle;
   }
   .icon{
-    height: 80px;
+    height: 100px;
     padding: 5px;
     vertical-align: middle;
   }
@@ -883,9 +992,7 @@ pre {
     width: 100%;
     margin-top: 0px;
     background-color: #fff;
-    padding-left: 7%;
-    padding-right: 7%;
-    padding-top: 30px;
+    padding: 2%;
     box-sizing: border-box;
     position: relative;
     vertical-align: middle;
@@ -922,11 +1029,8 @@ pre {
   }
   .secondcontent{
     width: 100%;
-    margin-top: 0px;
     background-color: #fff;
-    padding-left: 7%;
-    padding-right: 7%;
-    padding-top: 20px;
+    padding: 2%;
     box-sizing: border-box;
     position: relative;
     vertical-align: middle;
@@ -979,62 +1083,12 @@ pre {
     background-color: #000;
     font-size: 18px;
     text-align: center;
-    vertical-align: text-top;
+    vertical-align: middle;
+    padding: 2%;
     color: #fff;
     font-family: "josefin";
-    padding-top: 2%;
   }
 
-  .footercontainer a{
-    font-family: "josefin";
-    font-weight: bold;
-    color: #fff;
-    text-decoration: none;
-  }
-
-  .footercontainer a:hover{
-    font-family: "josefin";
-    font-weight: bold;
-    color: #7E1D17;
-    text-decoration: none;
-  }
-
-  .footercolumn{
-    width: 20%;
-    padding-left: 2%;
-    padding-right: 2%;
-    font-family: "josefin";
-    line-height: 1.5;
-    white-space: nowrap;
-    color: #fff;
-    display: inline-block;
-    vertical-align: text-top;
-  }
-
-  .footerlink{
-    padding-left: 2%;
-    padding-right: 2%;
-    font-family: "josefin";
-    line-height: 1.5;
-    white-space: nowrap;
-    color: #A0A0A0;
-    display: inline-block;
-    padding-bottom: 30px;
-  }
-
-  .footerlink a{
-    font-family: "josefin";
-    font-weight: bold;
-    color: #A0A0A0;
-    text-decoration: none;
-  }
-
-  .footerlink a:hover{
-    font-family: "josefin";
-    font-weight: bold;
-    color: #7E1D17;
-    text-decoration: none;
-  }
   .selectiontext {
     vertical-align: middle;
     padding-left: 10%;
@@ -1148,9 +1202,7 @@ pre {
     width: 100%;
     margin-top: 0px;
     background-color: #fff;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-top: 20px;
+    padding: 2%;
     box-sizing: border-box;
     position: relative;
     vertical-align: middle;
@@ -1258,6 +1310,33 @@ pre {
   }
 
   .footerlink a:hover{
+    font-family: "josefin";
+    font-weight: bold;
+    color: #7E1D17;
+    text-decoration: none;
+  }
+
+  .link a{
+    font-family: "josefin";
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .link a:hover{
+    font-family: "josefin";
+    font-weight: bold;
+    color: #7E1D17;
+    text-decoration: none;
+
+  .link a{
+    font-family: "josefin";
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .link a:hover{
     font-family: "josefin";
     font-weight: bold;
     color: #7E1D17;
