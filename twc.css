@@ -17,6 +17,12 @@ h {
   color: #fff;
 }
 
+p {
+  font-size: 3vh;
+  font-family: "futura";
+  color: #000;
+}
+
 
 /* Mobile Menu */
 .sidenav {
@@ -74,7 +80,7 @@ h {
 /* Menu */
 .indexcontainer{
   height: 100px;
-  width: 100vw;
+  width: 100%;
   background-position: center;
   background-size: cover;
   box-sizing: border-box;
@@ -152,13 +158,32 @@ nav ul li a:hover{
   vertical-align: text-bottom;
 }
 
-/* Container */
+/* Containers */
 .container {
   display: flex;
   justify-content: center;
   background-position: center;
-  min-height: 100vw;
+  min-height: 100%;
   background-repeat: no-repeat;
+}
+
+/* 3 column container */
+.responsive-three-column-grid {
+    display:block;
+}
+
+/* columns */
+.responsive-three-column-grid > * {
+    padding:1rem;
+}
+
+/* tablet breakpoint */
+@media (min-width:1200px) {
+    .responsive-three-column-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 5fr 2fr 2fr 1fr;
+    }
 }
 
 /* Items */
@@ -177,7 +202,7 @@ nav ul li a:hover{
   position: relative;
   bottom: 0
   left: 0;
-  width: 100vw;
+  width: 100%;
 }
 
 /* Album Cover */
@@ -190,7 +215,7 @@ nav ul li a:hover{
 
 /* Tour Dates */
 .tourtable{
-  width: 100vw;
+  width: 100%;
   text-align: center;
   font-size: 3vh;
   text-align: center;
@@ -202,7 +227,7 @@ nav ul li a:hover{
 
 /* Button Styling */
 .button{
-  width: 100vw;
+  width: 100%;
   text-align: center;
   padding: 2vh;
 }
@@ -224,28 +249,22 @@ nav ul li a:hover{
   font-family: "futura";
 }
 
-/* Footer */
-.footercontainer{
-  width: 100vw;
-  overflow: hidden;
-  display: block;
-  box-sizing: border-box;
-  position: relative;
-  background-color: #000;
-  text-align: center;
-  vertical-align: middle;
-  padding: 4vh;
+.selectionbtn:hover{
+  background: rgba(255,255,255,1);
+  color: rgba(129,29,23,1);
 }
 
-.logofooter{
-  width: 20vw;
-  margin: auto;
-  cursor: pointer;
+/* Icons */
+.icon{
+  height: 10vh;
+  padding-top: 2vh;
+  vertical-align: middle;
 }
+
 
 /* Review */
 .review{
-  width: 100vw;
+  width: 100%;
   padding-left: 20%;
   padding-right: 20%;
   padding-top: 2vh;
@@ -276,6 +295,27 @@ nav ul li a:hover{
   background-repeat: no-repeat;
   background-size: 25% 25%;
 }
+
+
+/* Footer */
+.footercontainer{
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+  background-color: #000;
+  text-align: center;
+  vertical-align: middle;
+  padding: 4vh;
+}
+
+.logofooter{
+  width: 20vw;
+  margin: auto;
+  cursor: pointer;
+}
+
 
 /* Mobile Show */
 @media (max-width: 1200px) {
