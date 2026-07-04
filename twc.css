@@ -456,7 +456,7 @@ nav ul li a:hover{
 /* Change background color of buttons on hover */
 .tab button:hover {
   background-color: #7E1D17;
-  color: #fff;
+  color: #ffffff;
 }
 
 /* Create an active/current tablink class */
@@ -472,7 +472,6 @@ nav ul li a:hover{
   background-color: #fff;
   margin: auto;
   text-align: center;
-  border-top: 3px solid;
 }
 
 .tabcontent {
