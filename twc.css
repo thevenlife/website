@@ -382,10 +382,8 @@ nav ul li a:hover{
 /* Review */
 .review{
   width: 100%;
-  padding-left: 20%;
-  padding-right: 20%;
   padding-top: 2vh;
-  padding-bottom: 2vh;
+  padding-bottom: 4vh;
   box-sizing: border-box;
   position: relative;
   background: #fff;
