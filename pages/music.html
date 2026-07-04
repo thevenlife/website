@@ -296,6 +296,160 @@
     </div>
 </div>
 
+<!-- Lyrics -->
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Intro')"><p class="bold">1. Intro</p></button>
+  <button class="tablinks" onclick="openCity(event, 'Lost & Found')"><p class="bold">2. Lost & Found</p></button>
+  <button class="tablinks" onclick="openCity(event, 'Promise (The Half Term Blues)')"><p class="bold">3. Promise (The Half Term Blues)</p></button>
+  <button class="tablinks" onclick="openCity(event, 'Roger's Bar')"><p class="bold">4. Roger's Bar</p></button>
+  <button class="tablinks" onclick="openCity(event, 'Mountain Hacks')"><p class="bold">5. Mountain Hacks</p></button>
+  <button class="tablinks" onclick="openCity(event, 'Massive Flippin' Angover')"><p class="bold">6. Massive Flippin' Angover</p></button>
+  <button class="tablinks" onclick="openCity(event, 'If It's Raining In Town')"><p class="bold">7. If It's Raining In Town</p></button>
+  <button class="tablinks" onclick="openCity(event, 'Thanks And Praise')"><p class="bold">8. Thanks & Praise</p></button>
+  <button class="tablinks" onclick="openCity(event, 'Men Of The Sesh')"><p class="bold">9. Men Of The Sesh</p></button>
+  <button class="tablinks" onclick="openCity(event, 'Is The Wine To Blame?')"><p class="bold">10. Is The Wine To Blame?</p></button>
+</div>
+
+<div class="button" style="text-align:center; background:#fff;">
+<div id="Intro" class="tabcontent">
+  <p>Right, let's get started.
+  <br>
+  <br>Ooh, yes.
+  <br>
+  <br>Hmm... right.
+  <br>
+  <br>Cheers.
+  <br>
+  <br>Saunte.
+  <br>
+  <br>Are you, uh...
+  <br>
+  <br>Ready?
+  <br>
+  <br>Yeah, cool. Let's go.</p>
+</div>
+
+<div id="Lost & Found" class="tabcontent">
+  <p>
+    <br>Let's shred, I've got some new threads, and my pockets got my phone and my van keys.
+    <br>We're hit the Stash and we're filming some laps, with my boys from the Jam Society.
+    <br>These days are the ones that I'll save.
+    <br>That I'll remember for the rest of my days.
+    <br>
+    <br>And now it's rail sesh 'til the landing's a mess and my hip flask is running on empty.
+    <br>To Carrefour we'll get a beer or two more and the good times are flowing a plenty.
+    <br>These afternoons are the ones that I'll save.
+    <br>That I'll remember for the rest of my days, so I say:
+    <br>What a lovely day.
+    <br>
+    <br>Get on the bus, with minimal fuss and we make it back to town for a beverage.
+    <br>Just one more, maybe 3 or 4 and the beer starts to take up some leverage.
+    <br>These evenings are the ones that I'll save.
+    <br>That I'll remember for the rest of my days.
+    <br>
+    <br>And now my eyes blur and I'm starting to slur as I stumble my way to the dance floor.
+    <br>Lights and sounds, spinning around and I don't know what else I could ask for!
+    <br>These nights are the ones that I'll save.
+    <br>That I'll remember for the rest of my days, so I say:
+    <br>What a lovely day.
+    <br>
+    <br>What's this? Something's amiss. This definitely isn't my front room.
+    <br>That box of chips, smells just like sick... I check my pockets, but get, nothing yet, just an impending sense of doom.
+    <br>
+    <br>I dropped my van keys in the Stash.
+    <br>My hip flask is bent and cracked.
+    <br>I've left my iPhone on the bus.
+    <br>My jacket's gone, every things gone!
+    <br>
+    <br>Oh these days are the ones I won't miss.
+    <br>I won't remember because I was too pissed.
+    <br>Wait.. this isn't Morzine... I think it's Les gets...
+    <br>How did things end up this way?
+    <br>
+    <br>Oh this day I never wanted to come.
+    <br>But I can't undo the things that I've done.
+    <br>And I know what I must do...
+    <br>
+    <br>I'll have to post on Morzine Crew.
+    <br>I'll do the post of shame.
+    <br>List all the things that I've lost.
+    <br>And I'll never drink again.
+    <br>It's probably futile anyway
+    <br>I've only got myself to blame.
+    <br>I can write some words, learn 3 chords
+    <br>Post a song in the Morzine Music Awards.
+    <br>Maybe save some dignity.
+    <br>Or maybe get my jacket back.
+    <br>Maybe I can save some dignity
+    <br>But probably not.
+  </p>
+</div>
+
+<div id="Promise (The Half Term Blues)" class="tabcontent">
+  <p>
+
+  </p>
+</div>
+
+<div id="Roger's Bar" class="tabcontent">
+  <p>
+
+  </p>
+</div>
+
+<div id="Mountain Hacks" class="tabcontent">
+  <p>
+
+  </p>
+</div>
+
+<div id="Massive Flippin' Angover" class="tabcontent">
+  <p>
+
+  </p>
+</div>
+
+<div id="If It's Raining In Town" class="tabcontent">
+  <p>
+
+  </p>
+</div>
+
+<div id="Thanks And Praise" class="tabcontent">
+  <p>
+
+  </p>
+</div>
+
+<div id="Men Of The Sesh" class="tabcontent">
+  <p>
+
+  </p>
+</div>
+
+<div id="Is The Wine To Blame?)" class="tabcontent">
+  <p>
+
+  </p>
+</div>
+
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
 
 <!-- Footer -->
 <div class="footercontainer">
