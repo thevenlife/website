@@ -1,19 +1,31 @@
 /* Fonts */
 @font-face {
     font-family: 'futura';
+    src:  url('fonts/futura/FuturaLT-CondensedLight.woff2') format('woff2'),
+          url('fonts/futura/FuturaLT-CondensedLight.woff') format('woff'),
+          url('fonts/futura/FuturaLT-CondensedLight.eot') format('eot'),
+          url('fonts/futura/FuturaLT-CondensedLight.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'futuraBold';
     src:  url('fonts/futura/FuturaLT-Condensed.woff2') format('woff2'),
           url('fonts/futura/FuturaLT-Condensed.woff') format('woff'),
           url('fonts/futura/FuturaLT-Condensed.eot') format('eot'),
           url('fonts/futura/FuturaLT-Condensed.svg') format('svg');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;    font-weight: normal;
+    font-display: swap;
     font-style: normal;
 }
 
 h {
-  font-size: 5vh;
-  font-family: "futura";
+  font-size: 7vh;
+  font-family: "futuraBold";
   color: #fff;
 }
 
@@ -21,6 +33,24 @@ p {
   font-size: 3vh;
   font-family: "futura";
   color: #000;
+}
+
+p.bold {
+  font-size: 3.5vh;
+  font-family: "futuraBold";
+  color: #000;
+}
+
+p.description {
+  font-size: 2.5vh;
+  font-family: "futura";
+  color: #000;
+}
+
+p.white {
+  font-size: 3vh;
+  font-family: "futura";
+  color: #fff;
 }
 
 
@@ -158,6 +188,13 @@ nav ul li a:hover{
   vertical-align: text-bottom;
 }
 
+/* Main text */
+.maintext{
+  width: 100%;
+  text-align: center;
+  padding: 2vh;
+}
+
 /* Containers */
 .container {
   display: flex;
@@ -167,7 +204,20 @@ nav ul li a:hover{
   background-repeat: no-repeat;
 }
 
-/* 3 column container */
+.mediacontainer {
+  display: flex;
+  justify-content: center;
+  padding: 2vh;
+}
+
+.mediacontainerwhite {
+  display: flex;
+  justify-content: center;
+  padding: 2vh;
+  background-color: #fff;
+}
+
+/* 4 column container */
 .responsive-three-column-grid {
     display:block;
 }
@@ -184,6 +234,59 @@ nav ul li a:hover{
         grid-auto-rows: 1fr;
         grid-template-columns: 5fr 2fr 2fr 1fr;
     }
+}
+
+/* 2 column container */
+.responsive-two-column-grid {
+    display:block;
+    background-color: #fff;
+    text-align: center;
+    padding-top: 2vh;
+}
+
+/* columns */
+.responsive-two-column-grid > * {
+    padding:0;
+    margin: auto;
+}
+
+/* tablet breakpoint */
+@media (min-width:1200px) {
+    .responsive-two-column-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* 2 column container */
+.responsive-two-column-grid-reverse {
+    display:flex;
+    background-color: #fff;
+    text-align: center;
+    padding-top: 2vh;
+    flex-direction: column-reverse;
+}
+
+/* columns */
+.responsive-two-column-grid-reverse > * {
+    padding:0;
+    margin: auto;
+}
+
+/* tablet breakpoint */
+@media (min-width:1200px) {
+    .responsive-two-column-grid-reverse {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Two Column Image */
+.twocolumn {
+  width:50vw;
+
 }
 
 /* Items */
@@ -258,7 +361,7 @@ nav ul li a:hover{
 .icon{
   height: 10vh;
   padding-top: 2vh;
-  vertical-align: middle;
+  margin:auto;
 }
 
 
@@ -297,24 +400,7 @@ nav ul li a:hover{
 }
 
 
-/* Footer */
-.footercontainer{
-  width: 100%;
-  overflow: hidden;
-  display: block;
-  box-sizing: border-box;
-  position: relative;
-  background-color: #000;
-  text-align: center;
-  vertical-align: middle;
-  padding: 4vh;
-}
 
-.logofooter{
-  width: 20vw;
-  margin: auto;
-  cursor: pointer;
-}
 
 
 /* Mobile Show */
