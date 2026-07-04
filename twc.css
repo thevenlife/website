@@ -442,6 +442,12 @@ nav ul li a:hover{
   background-color: #fff;
 }
 
+.lyrics{
+  width: 100%;
+  text-align: center;
+  padding: 2vh;
+}
+
 /* Style the buttons that are used to open the tab content */
 .tab button {
   background-color: inherit;
