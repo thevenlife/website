@@ -35,6 +35,14 @@ p {
   color: #000;
 }
 
+p.blog {
+  font-size: 3vh;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "futura";
+  color: #000;
+}
+
 p.bold {
   font-size: 3.5vh;
   font-family: "futuraBold";
@@ -233,6 +241,50 @@ nav ul li a:hover{
         display: grid;
         grid-auto-rows: 1fr;
         grid-template-columns: 5fr 2fr 2fr 1fr;
+    }
+}
+
+/* Horizontal Rule */
+.hrred{
+  border-top: 1px;
+  border-style: solid;
+  border-color: #7E1D17;
+  width: 70%;
+  margin: auto;
+}
+
+
+/* blog column container */
+.responsive-blog-column-grid {
+    display:block;
+}
+
+/* columns */
+.responsive-blog-column-grid > * {
+    margin: 5%;
+    border-style: solid;
+    border-color: #7E1D17;
+    border-width: 0.3vw;
+}
+
+.blogrow {
+  display: flex;
+}
+
+.blogcolumnleft {
+  flex: 20%;
+}
+
+.blogcolumnright {
+  flex: 80%;
+}
+
+/* tablet breakpoint */
+@media (min-width:1200px) {
+    .responsive-blog-column-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
