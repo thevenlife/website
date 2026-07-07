@@ -95,97 +95,74 @@
 
 <!-- Blog -->
       <script>
-
-      let params = new URLSearchParams(document.location.search);
-      let blogtitle = params.get("blogtitle");
-      let blogdate = params.get("blogdate");
-      let blogimage = params.get("blogimage");
-      let blognumber = params.get("number");
-
-
-
       const substackUrl = "http://venlife.substack.com/feed"; // Replace with your Substack domain
       const rssToJsonApi = "https://api.rss2json.com/v1/api.json?rss_url=http%3A%2F%2Fvenlife.substack.com%2Ffeed";
-
-      async function fetchLatestPost() {
+      async function fetchLatestPosts() {
         try {
           const response = await fetch(rssToJsonApi);
           const data = await response.json();
 
           // Grab the latest 3 posts
-          const latestPost = (data.items || []).slice(0, 1);
+          const latestPosts = (data.items || []).slice(0, 50);
 
           let output = '';
-          latestPost.forEach(item => {
-
-            const str = item.content;
-            const ignoreIndex = item.content.indexOf(blognumber);
-            const firstIndex = item.content.indexOf(blognumber, ignoreIndex + 1);
-            const secondIndex = item.content.indexOf(blognumber, firstIndex + 1);
-
-            const contentResult = str.substring(firstIndex + 8, secondIndex - 1);
-
+          latestPosts.forEach(item => {
             // Extract the first image from the post content if it exists
             const imgMatch = item.content.match(/<img[^>]+src="([^">]+)"/);
             const imageUrl = imgMatch ? imgMatch[1] : '';
 
             output += `
+
               <div>
-                <div class="blogrow">
-                  <article class="substack-post2">
-                  ${blogimage ? `<img src="${blogimage}" style="max-width:100%">` : ''}
-                </div>
+              <article class="substack-post">
+              ${imageUrl ? `<img src="${imageUrl}" alt="${item.title}" style="max-width:100%">` : ''}
               <br>
               <br>
 
               <div class="blogrow">
-                <div class="blogindexcolumnleft"">
-                  <div style="width:20%; float:left;">
-                  <img src="../graphics/icons/iconblog.jpg" style="border-radius:50%; margin-left:2vw;">
-                  </div>
-                  <div style="width:80%; float:left;">
-                  <p class="blog" style="margin-left:2vw;">The Wine Club<br>${blogdate}</p>
-                  </div>
-                </div>
-                <div class="blogindexcolumnright">
-                </div>
+
+              <div class="blogcolumnleft">
+              <img src="../graphics/icons/iconblog.jpg" style="border-radius:50%; margin-left:2vw;">
               </div>
-              <br>
-              <div style="width:100%; padding-bottom:2%; text-align:center">
-              <h style="color:#7E1D17">${blogtitle}</h>
+
+              <div class="blogcolumnright">
+              <p class="blog" style="margin-left:2vw;">The Wine Club<br>${item.pubDate.substring(0,10)}</p>
+              </div>
+
+              </div>
+
+              <div style="width:100%; padding-top:6%; padding-bottom:2%; text-align:center">
+              <h style="color:#7E1D17">${item.title}</h>
               </div>
 
               <div style="width:100%; padding:2%; text-align:center">
-              <p>
-              ${contentResult}
-              </p>
+              <p>${item.description.substring(0, 150)}...</p>
               </div>
 
               <hr class="hrred" noshade>
 
               <div style="width:100%; padding-left:2%; padding-right:5%; text-align:right;">
-              <p><a href="../pages/blog.html" style="text-decoration:none; color:#7E1D17">More Blogs...</a></p>
+              <p><a href="${item.link}" style="text-decoration:none; color:#7E1D17">Read More...</a></p>
               </div>
 
               </div>
 
               </article>
               </div>
+
               `;
             });
 
-            document.getElementById('substack-feed2').innerHTML = output;
+            document.getElementById('substack-feed').innerHTML = output;
             } catch (error) {
               console.error("Error fetching Substack feed:", error);
             }
           }
-          fetchLatestPost();
-
+          fetchLatestPosts();
 </script>
 
-<div class="container" id="substack-feed2" style="margin-top:8%; margin-bottom:2%; margin-left:auto; margin-right:auto; border-style:solid; border-color: #7E1D17; border-width: 0.3vw; width:80%">
+<div class="responsive-blog-column-grid" style="background-color:#fff; margin-top:14vh;" id="substack-feed">
 </div>
-
 
 
 <!-- Footer -->

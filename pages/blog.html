@@ -110,6 +110,8 @@
             // Extract the first image from the post content if it exists
             const imgMatch = item.content.match(/<img[^>]+src="([^">]+)"/);
             const imageUrl = imgMatch ? imgMatch[1] : '';
+            const blognumber = item.description.substring(0,7);
+
 
             output += `
 
@@ -136,13 +138,13 @@
               </div>
 
               <div style="width:100%; padding:2%; text-align:center">
-              <p>${item.description.substring(0, 150)}...</p>
+              <p>${item.description.substring(8, 150)}...</p>
               </div>
 
               <hr class="hrred" noshade>
 
               <div style="width:100%; padding-left:2%; padding-right:5%; text-align:right;">
-              <p><a href="${item.link}" style="text-decoration:none; color:#7E1D17">Read More...</a></p>
+              <p><a href="../pages/blogpost.html?blogtitle=${item.title}&blogdate=${item.pubDate.substring(0,10)}&blogimage=${imageUrl}&number=${blognumber}" style="text-decoration:none; color:#7E1D17">Read More...</a></p>
               </div>
 
               </div>
