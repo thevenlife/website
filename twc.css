@@ -101,6 +101,7 @@ p.white {
   z-index: 99;
   position: fixed;
   top: 3vh;
+  filter: invert(100%);
 }
 
 .zindex{
