@@ -107,14 +107,15 @@
 
           let output = '';
           latestPosts.forEach(item => {
+
+
             // Extract the first image from the post content if it exists
             const imgMatch = item.content.match(/<img[^>]+src="([^">]+)"/);
             const imageUrl = imgMatch ? imgMatch[1] : '';
-            const blognumber = item.description.substring(0,7);
+            const blognumber = item.description.substring(0,6);
 
 
             output += `
-
               <div>
               <article class="substack-post">
               ${imageUrl ? `<img src="${imageUrl}" alt="${item.title}" style="max-width:100%">` : ''}
@@ -138,7 +139,7 @@
               </div>
 
               <div style="width:100%; padding:2%; text-align:center">
-              <p>${item.description.substring(8, 150)}...</p>
+              <p>${item.description.substring(7, 150)}...</p>
               </div>
 
               <hr class="hrred" noshade>

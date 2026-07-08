@@ -101,6 +101,8 @@
       let blogdate = params.get("blogdate");
       let blogimage = params.get("blogimage");
       let blognumber = params.get("number");
+      let blogslice = blognumber.substring(4,6);
+
 
 
 
@@ -113,17 +115,16 @@
           const data = await response.json();
 
           // Grab the latest 3 posts
-          const latestPost = (data.items || []).slice(0, 1);
+          const latestPost = (data.items || []).reverse().slice(blogslice - 1, blogslice);
 
           let output = '';
           latestPost.forEach(item => {
 
             const str = item.content;
-            const ignoreIndex = item.content.indexOf(blognumber);
-            const firstIndex = item.content.indexOf(blognumber, ignoreIndex + 1);
+            const firstIndex = item.content.indexOf(blognumber);
             const secondIndex = item.content.indexOf(blognumber, firstIndex + 1);
 
-            const contentResult = str.substring(firstIndex + 8, secondIndex - 1);
+            const contentResult = str.substring(firstIndex + 7, secondIndex - 1);
 
             // Extract the first image from the post content if it exists
             const imgMatch = item.content.match(/<img[^>]+src="([^">]+)"/);
