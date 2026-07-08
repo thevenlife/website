@@ -61,6 +61,18 @@ p.white {
   color: #fff;
 }
 
+a {
+  font-size: 3vh;
+  font-family: "futura";
+  color: #000;
+}
+
+a.hover {
+  font-size: 3vh;
+  font-family: "futura";
+  color: #7E1D17;
+}
+
 
 /* Mobile Menu */
 .sidenav {
