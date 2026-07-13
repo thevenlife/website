@@ -131,6 +131,45 @@
 </div>
 
 
+<div id="featured-events"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", async () => {
+    const container = document.getElementById("featured-events");
+
+    try {
+        // Change this to the correct path to your events page
+        const response = await fetch("events.html");
+
+        if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+        }
+
+        const html = await response.text();
+
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const today = new Date().toISOString().split("T")[0];
+
+        const events = Array.from(doc.querySelectorAll(".date-item"))
+            .filter(event => event.id >= today)
+            .sort((a, b) => a.id.localeCompare(b.id))
+            .slice(0, 3);
+
+        console.log("Found events:", events);
+
+        events.forEach(event => {
+            container.appendChild(event.cloneNode(true));
+        });
+
+    } catch (err) {
+        console.error("Error:", err);
+    }
+});
+</script>
+
+
 <!-- tour dates -->
 <div class="button" style="text-align:center;">
   <h>Tour Dates</h>
