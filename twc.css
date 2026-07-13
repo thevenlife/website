@@ -358,6 +358,9 @@ nav ul li a:hover{
     background-color: #fff;
     text-align: center;
     padding-top: 2vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+
 }
 
 /* columns */
