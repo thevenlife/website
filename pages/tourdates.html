@@ -260,22 +260,6 @@
   <td style="width:25%; border:none; background-color:#7E1D17; padding: 1vh;"></th>
 </tr>
 </table>
-</div>
-
-<div id="2026-08-12"  class="date-item" >
-<table class="tourtable">
-<tr>
-  <td style="width:25%; border:none; background-color:#D3D3D3; padding: 2vh;">12th August 2026</th>
-  <td style="width:50%; border:none; background-color:#D3D3D3; padding: 2vh;"><p class="bold">SECRET SHOW</p></th>
-  <td style="width:25%; border:none; background-color:#D3D3D3; padding: 2vh;">Shhh....</th>
-</tr>
-<tr>
-  <td style="width:25%; border:none; background-color:#7E1D17; padding: 1vh;"></th>
-  <td style="width:50%; border:none; background-color:#7E1D17; padding: 1vh;"></th>
-  <td style="width:25%; border:none; background-color:#7E1D17; padding: 1vh;"></th>
-</tr>
-</table>
-</div>
 
 </p>
 </div>
@@ -285,24 +269,17 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
+    // Get today's date in YYYY-MM-DD format
     const today = new Date().toISOString().split("T")[0];
-    const container = document.getElementById("events-container");
 
-    // Get all event divs
-    const events = Array.from(container.querySelectorAll(".date-item"));
+    // Check all divs with the class "date-item"
+    document.querySelectorAll(".date-item").forEach(div => {
+        const divDate = div.id;
 
-    // Hide today and past events
-    events.forEach(event => {
-        if (event.id <= today) {
-            event.style.display = "none";
+        if (divDate < today) {
+            div.style.display = "none";
         }
     });
-
-    // Sort by date (earliest future event first)
-    events.sort((a, b) => a.id.localeCompare(b.id));
-
-    // Reorder the divs
-    events.forEach(event => container.appendChild(event));
 });
 </script>
 
