@@ -131,6 +131,12 @@
 </div>
 
 
+
+<!-- tour dates -->
+<div class="button" style="text-align:center;">
+  <h>Tour Dates</h>
+</div>
+
 <div id="featured-events"></div>
 
 <script>
@@ -139,7 +145,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     try {
         // Change this to the correct path to your events page
-        const response = await fetch("events.html");
+        const response = await fetch("pages/tourdates.html");
 
         if (!response.ok) {
             throw new Error(`HTTP ${response.status}`);
@@ -169,6 +175,38 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 </script>
 
+
+
+  <p>
+  <br>
+  <table class="tourtable">
+  <tr>
+    <td style="width:25%; border:none; background-color:#D3D3D3; padding: 2vh;">8th July 2026</th>
+    <td style="width:50%; border:none; background-color:#D3D3D3; padding: 2vh;"><p class="bold">2000 Trees Festival</p></th>
+    <td style="width:25%; border:none; background-color:#D3D3D3; padding: 2vh;">Not Performing</th>
+  </tr>
+  <tr>
+    <td style="width:25%; border:none; background-color:#7E1D17; padding: 1vh;"></th>
+    <td style="width:50%; border:none; background-color:#7E1D17; padding: 1vh;"></th>
+    <td style="width:25%; border:none; background-color:#7E1D17; padding: 1vh;"></th>
+  </tr>
+  <tr>
+    <td style="width:25%; border:none; background-color:#D3D3D3; padding: 2vh;">1st August 2026</th>
+    <td style="width:50%; border:none; background-color:#D3D3D3; padding: 2vh;"><p class="bold">Cambridge Folk Festival</p></th>
+    <td style="width:25%; border:none; background-color:#D3D3D3; padding: 2vh;">Not Performing</th>
+  </tr>
+  <tr>
+    <td style="width:25%; border:none; background-color:#7E1D17; padding: 1vh;"></th>
+    <td style="width:50%; border:none; background-color:#7E1D17; padding: 1vh;"></th>
+    <td style="width:25%; border:none; background-color:#7E1D17; padding: 1vh;"></th>
+  </tr>
+  <tr>
+    <td style="width:25%; border:none; background-color:#D3D3D3; padding: 2vh;">27th August 2026</th>
+    <td style="width:50%; border:none; background-color:#D3D3D3; padding: 2vh;"><p class="bold">Cowal Gathering Festival</p></th>
+    <td style="width:25%; border:none; background-color:#D3D3D3; padding: 2vh;">Not Performing</th>
+  </tr>
+  </table>
+</p>
 
 <div class="button" style="text-align:center;">
   <a href ="pages/tourdates.html" class="selectionbtn">More Dates</a>
