@@ -247,7 +247,7 @@
 </table>
 </div>
 
-<div id="2026-09-12"  class="date-item" >
+<div id="2026-09-08"  class="date-item" >
 <table class="tourtable">
 <tr>
   <td style="width:25%; border:none; background-color:#D3D3D3; padding: 2vh;">12th September 2026</th>
@@ -269,17 +269,24 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-    // Get today's date in YYYY-MM-DD format
     const today = new Date().toISOString().split("T")[0];
+    const container = document.getElementById("events-container");
 
-    // Check all divs with the class "date-item"
-    document.querySelectorAll(".date-item").forEach(div => {
-        const divDate = div.id;
+    // Get all event divs
+    const events = Array.from(container.querySelectorAll(".date-item"));
 
-        if (divDate < today) {
-            div.style.display = "none";
+    // Hide today and past events
+    events.forEach(event => {
+        if (event.id <= today) {
+            event.style.display = "none";
         }
     });
+
+    // Sort by date (earliest future event first)
+    events.sort((a, b) => a.id.localeCompare(b.id));
+
+    // Reorder the divs
+    events.forEach(event => container.appendChild(event));
 });
 </script>
 
