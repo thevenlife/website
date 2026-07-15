@@ -8,7 +8,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+  <link rel="stylesheet" href="../plyr/sass/plyr.scss" />
 
 
 </head>
@@ -115,7 +115,7 @@
 <!-- busking video -->
 <div class="mediacontainerwhite">
   <div style="flex-grow:1; margin-left:10%; margin-right:10%; text-align:center">
-    <div id="player"
+    <div class="player"
          data-plyr-provider="youtube"
          data-plyr-embed-id="JJUnmOecTno">
     </div>
@@ -188,7 +188,7 @@
 <!-- men of the sesh video -->
 <div class="mediacontainerwhite">
   <div style="flex-grow:1; margin-left:10%; margin-right:10%; text-align:center">
-    <div id="player2"
+    <div class="player"
          data-plyr-provider="youtube"
          data-plyr-embed-id="gZQ8PkdB3i0">
     </div>
@@ -228,7 +228,7 @@
 <!-- wine club song video -->
 <div class="mediacontainerwhite">
   <div style="flex-grow:1; margin-left:10%; margin-right:10%; text-align:center">
-    <div id="player3"
+    <div class="player"
          data-plyr-provider="youtube"
          data-plyr-embed-id="uR9XkzvINbc">
     </div>
@@ -297,7 +297,7 @@
 </div>
 
 
-<script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+<script src="../plyr/js/polyfilled.js"></script>
 <script>
   const players = Array.from(document.querySelectorAll('.player')).map((p) => new Plyr(p));
 </script>
