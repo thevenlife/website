@@ -114,10 +114,11 @@
 
 <!-- busking video -->
 <div class="mediacontainerwhite">
-  <div style="flex-grow:1; margin:auto; text-align:center">
-    <video width="70%"controls>
-      <source src="https://filebin.net/fv4up7wf2klxsqx2/videobuskingvassiliki.mp4" type="video/mp4">
-    </video>
+  <div style="flex-grow:1; margin-left:10%; margin-right:10%; text-align:center">
+    <div id="player"
+         data-plyr-provider="youtube"
+         data-plyr-embed-id="JJUnmOecTno">
+    </div>
     <p class="description">
     Busking on the mean streets of Vassiliki, Greece in 2016
     </p>
@@ -186,10 +187,11 @@
 
 <!-- men of the sesh video -->
 <div class="mediacontainerwhite">
-  <div style="flex-grow:1; margin:auto; text-align:center">
-    <video width="70%"controls>
-      <source src="https://filebin.net/fv4up7wf2klxsqx2/videomenofthesesh.mp4" type="video/mp4">
-    </video>
+  <div style="flex-grow:1; margin-left:10%; margin-right:10%; text-align:center">
+    <div id="player2"
+         data-plyr-provider="youtube"
+         data-plyr-embed-id="gZQ8PkdB3i0">
+    </div>
     <p class="description">
     Performing outside Carlos the van, circa 2017
     </p>
@@ -225,12 +227,13 @@
 
 <!-- wine club song video -->
 <div class="mediacontainerwhite">
-  <div style="flex-grow:1; margin:auto; text-align:center">
-    <video width="70%"controls>
-      <source src="https://filebin.net/fv4up7wf2klxsqx2/videomma.mp4" type="video/mp4">
-    </video>
+  <div style="flex-grow:1; margin-left:10%; margin-right:10%; text-align:center">
+    <div id="player3"
+         data-plyr-provider="youtube"
+         data-plyr-embed-id="uR9XkzvINbc">
+    </div>
     <p class="description">
-    Practising 'The Wine Club Song', circa 2025
+    Perfmoring "Lost & Found" for the Morzine Music Awards, circa 2021
     </p>
   </div>
 </div>
@@ -246,7 +249,7 @@
 <!-- wine club song video -->
 <div class="mediacontainerwhite">
   <div style="flex-grow:1; margin-left:10%; margin-right:10%; text-align:center">
-    <div id="player"
+    <div id="player4"
          data-plyr-provider="youtube"
          data-plyr-embed-id="vu-cnPWrP4M">
     </div>
@@ -267,7 +270,7 @@
 <!-- busking video -->
 <div class="mediacontainerwhite">
   <div style="flex-grow:1; margin-left:10%; margin-right:10%; text-align:center">
-    <div id="player"
+    <div id="player5"
          data-plyr-provider="youtube"
          data-plyr-embed-id="30EQ4LcbNdg">
     </div>
@@ -297,6 +300,10 @@
 <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
 <script>
   const player = new Plyr('#player');
+  const player2 = new Plyr('#player');
+  const player3 = new Plyr('#player');
+  const player4 = new Plyr('#player');
+  const player5 = new Plyr('#player');
 </script>
 
 </body>
