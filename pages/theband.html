@@ -249,7 +249,7 @@
 <!-- wine club song video -->
 <div class="mediacontainerwhite">
   <div style="flex-grow:1; margin-left:10%; margin-right:10%; text-align:center">
-    <div id="players"
+    <div id="player"
          data-plyr-provider="youtube"
          data-plyr-embed-id="vu-cnPWrP4M">
     </div>
@@ -299,12 +299,7 @@
 
 <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
 <script>
-  const player = new Plyr('#player');
-  const player2 = new Plyr('#player');
-  const player3 = new Plyr('#player');
-  const player4 = new Plyr('#player');
-  const player5 = new Plyr('#player');
-  const players = Array.from(document.querySelectorAll('.js-player')).map((p) => new Plyr(p));
+  const players = Array.from(document.querySelectorAll('.player')).map((p) => new Plyr(p));
 </script>
 
 </body>
