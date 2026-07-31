@@ -353,7 +353,7 @@ nav ul li a:hover{
 }
 
 /* 2 column container */
-.responsive-two-column-grid > * {
+.responsive-two-column-grid {
     display:block;
     background-color: #fff;
     text-align: center;
