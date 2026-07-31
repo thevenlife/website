@@ -239,7 +239,7 @@ nav ul li a:hover{
 }
 
 /* 4 column container */
-.responsive-three-column-grid > *  {
+.responsive-three-column-grid {
     display:block;
 }
 
