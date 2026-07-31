@@ -244,7 +244,7 @@ nav ul li a:hover{
 }
 
 /* columns */
-.responsive-three-column-grid > * {
+.responsive-three-column-grid {
     padding:0rem;
 }
 
@@ -360,12 +360,6 @@ nav ul li a:hover{
     padding-top: 2vh;
     padding-left: 2vh;
     padding-right: 2vh;
-
-}
-
-/* columns */
-.responsive-two-column-grid > * {
-    padding:0;
     margin: auto;
 }
 
@@ -388,7 +382,7 @@ nav ul li a:hover{
 }
 
 /* columns */
-.responsive-two-column-grid-reverse > * {
+.responsive-two-column-grid-reverse {
     padding:0;
     margin: auto;
 }
