@@ -239,12 +239,12 @@ nav ul li a:hover{
 }
 
 /* 4 column container */
-.responsive-three-column-grid {
+.responsive-three-column-grid > *  {
     display:block;
 }
 
 /* columns */
-.responsive-three-column-grid {
+.responsive-three-column-grid > * {
     padding:0rem;
 }
 
@@ -273,7 +273,7 @@ nav ul li a:hover{
 }
 
 /* columns */
-.responsive-blog-column-grid {
+.responsive-blog-column-grid > * {
     margin: 5%;
     border-style: solid;
     border-color: #7E1D17;
@@ -353,7 +353,7 @@ nav ul li a:hover{
 }
 
 /* 2 column container */
-.responsive-two-column-grid {
+.responsive-two-column-grid > * {
     display:block;
     background-color: #fff;
     text-align: center;
@@ -364,7 +364,7 @@ nav ul li a:hover{
 }
 
 /* columns */
-.responsive-two-column-grid {
+.responsive-two-column-grid > * {
     padding:0;
     margin: auto;
 }
@@ -388,7 +388,7 @@ nav ul li a:hover{
 }
 
 /* columns */
-.responsive-two-column-grid-reverse {
+.responsive-two-column-grid-reverse > * {
     padding:0;
     margin: auto;
 }
