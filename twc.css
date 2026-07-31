@@ -359,6 +359,12 @@ nav ul li a:hover{
     padding-top: 2vh;
     padding-left: 2vh;
     padding-right: 2vh;
+
+}
+
+/* columns */
+.responsive-two-column-grid {
+    padding:0;
     margin: auto;
 }
 
