@@ -538,8 +538,7 @@ nav ul li a:hover{
   color: #000;
   line-height: 1.5;
   text-align: center;
-  margin-left: 30vw;
-  margin-right: 30vw;
+  margin: auto;
   padding:2vw;
   background-color: #fff;
 }
