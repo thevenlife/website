@@ -530,6 +530,21 @@ nav ul li a:hover{
 }
 
 
+/* Mailing List Signup */
+.mailinglistsignup{
+  font-size: 3vh;
+  font-weight: lighter;
+  font-family: "futura";
+  color: #000;
+  line-height: 1.5;
+  text-align: center;
+  margin-left: 30vw;
+  margin-right: 30vw;
+  padding:2vw;
+  background-color: #fff;
+}
+
+
 /* Footer */
 .footercontainer{
   width: 100%;
