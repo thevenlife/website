@@ -102,6 +102,7 @@
       let blogimage = params.get("blogimage");
       let blognumber = params.get("number");
       let blogslice = blognumber.substring(4,6);
+      let currentURL = window.location.href;
 
 
 
@@ -148,7 +149,27 @@
                   <p class="blog" style="margin-left:10vmin;">The Wine Club<br>${blogdate}</p>
                   </div>
                 </div>
-                <div class="blogindexcolumnright">
+                <div class="blogindexcolumnright" style="font-size:2.5vh; font-family:futura; color:#000;text-align:right; margin-right:2vw;">
+
+                <!-- Basic Share Links -->
+
+                <!-- Twitter (url, text, @mention) -->
+                Share to: <a href="https://twitter.com/share?url=${currentURL}&text=${blogtitle}" class="share-btn twitter" target="_blank">
+                    Twitter
+                </a>
+
+                <!-- Facebook (url) -->
+                <a href="https://www.facebook.com/sharer/sharer.php?u=${currentURL}" class="share-btn facebook" target="_blank">
+                    Facebook
+                </a>
+
+                <!-- Email (subject, body) -->
+                <a href="mailto:?subject=${blogtitle}&body=Check out this incredbile blog post from my favourite band, The Wine Club!%0D%0A%0D%0A${currentURL}" class="share-btn email">
+                    Email
+                </a>
+                </p>
+
+
                 </div>
               </div>
               <br>
