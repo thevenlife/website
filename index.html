@@ -305,13 +305,26 @@ document.addEventListener("DOMContentLoaded", async () => {
 </div>
 
 
+
+
+
 <!-- Review -->
 <div class="review" style="background:#fff">
   <div class="reviewcontent">
-    "What can you say about The Wine Club? We're not sure - this is a magazine about bowling, and none of us really listen to much music."
-    <br>
-    <br>
-    - Rolling Stones Magazine
+    <script>
+        window.onload = function random(){
+            document.getElementById("one").innerHTML = Math.floor(Math.random() * 100000) + 3;
+        }
+    </script>
+    <div style="background-color:#fff; text-align:center">
+      <div style="display:inline-block;">
+        <p>Your Unique Wine Club Membership Number:</p>
+      </div>
+      <br>
+      <div style="display:inline-block;">
+        <p id="one" style="color:#fff; background:#000; padding:2.5vh 0.5vh 2.5vh 1.5vh; letter-spacing:1vh; border: 1px solid white"></p>
+      </div>
+    </div>
   </div>
 </div>
 

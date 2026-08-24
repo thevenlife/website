@@ -642,6 +642,8 @@ nav ul li a:hover{
 .share-btn.twitter     { background: #55acee; }
 .share-btn.facebook    { background: #3B5998; }
 .share-btn.email       { background: #444444; }
+.share-btn.myspace     { background: #0e1079; }
+
 
 /* Go from zero to full opacity */
 @keyframes fadeEffect {
