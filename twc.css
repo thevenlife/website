@@ -656,6 +656,9 @@ nav ul li a:hover{
   .mobileHide {
     display: none;
   }
+  .indexblog {
+    width: 55vmax;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -665,10 +668,16 @@ nav ul li a:hover{
   .mobileShow {
     display: inline;
   }
+  .indexblog {
+    width: 90%;
+  }
 }
 
 @media (min-width: 1201px) {
   .mobileShow{
     display: none;
+  }
+  .indexblog {
+    width: 55vmax;
   }
 }
