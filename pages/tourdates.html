@@ -297,7 +297,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Hide today and past events
     events.forEach(event => {
-        if (event.id <= today) {
+        if (event.id <= today - 10) {
             event.style.display = "none";
         }
     });
