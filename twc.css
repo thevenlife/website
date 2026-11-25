@@ -649,7 +649,8 @@ nav ul li a:hover{
   }
   /* Insta Feed*/
   .instafeed-container{
-    width: 90%;
+	  padding-left:2%;
+	  padding-right:2%;
   }
 }
 
@@ -661,11 +662,13 @@ nav ul li a:hover{
     display: inline;
   }
   .indexblog {
-    width: 90%;
+	  padding-left:2%;
+	  padding-right:2%;
   }
   /* Insta Feed*/
   .instafeed-container{
-    width: 90%;
+	  padding-left:15%;
+	  padding-right:15%;
   }
 }
 
