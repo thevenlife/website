@@ -485,18 +485,6 @@ nav ul li a:hover{
 }
 
 
-/* Insta Feed*/
-.instafeed{
-  width: 25%;
-  height: calc(100vw / 4);
-  object-fit: cover;
-}
-
-.instafeed:hover{
-  opacity: 0.7;
-  transition: 0.7s;
-}
-
 /* Review */
 .review{
   width: 100%;
@@ -659,6 +647,10 @@ nav ul li a:hover{
   .indexblog {
     width: 55vmax;
   }
+  /* Insta Feed*/
+  .instafeed-container{
+    width: 90%;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -671,6 +663,10 @@ nav ul li a:hover{
   .indexblog {
     width: 90%;
   }
+  /* Insta Feed*/
+  .instafeed-container{
+    width: 90%;
+  }
 }
 
 @media (min-width: 1201px) {
@@ -679,5 +675,9 @@ nav ul li a:hover{
   }
   .indexblog {
     width: 55vmax;
+  }
+  /* Insta Feed*/
+  .instafeed-container{
+    width: 60%;
   }
 }
